@@ -1,0 +1,17 @@
+Rendu previsionnel du Work package 2
+
+
+Base de donnee necessaire au bon foncionnement du site.
+preparation des requetes SQL necessaires par le site.
+Site web fonctionnel avec : 
+	Partie client/hors connexion
+		Accueil(vue des differents services).
+		Listes de professionnels
+	Partie avec connexion client
+		jusqu'a l'envoi d'un message non compris
+	Partie avec connexion pro
+		agenda
+		messagerie
+
+
+L'objectif est de finir la maquette du site et de preparer la base de donnee.
