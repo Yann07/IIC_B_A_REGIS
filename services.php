@@ -35,51 +35,57 @@
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-    
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-
-                        <a href="#">Acceuil</a>
-                    </li>
-                    <li>
-                        <a href="#">A propos </a>
-                    </li>
-                    <li>
-                        <a href="services.php">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+   <?php 
+include('header.php')
+    ?>
 
     <!-- Page Content -->
     <div class="container">
 
         <div class="row">
-
-            <div class="col-md-3">
-
+ 
+            
+			<div class="col-md-3">
+            <h2 class="lead" style="Font: 50px Verdana; font-weight:bold;" >Services</h2>
             	<!-- panneau services-->
-                <p class="lead">Services</p> 
+               
 
-                <div class="form-group">
-					<label for="recherche">Rechercher:</label>
-					<input type="text" class="form-control" id="recherche" ng-model="query" >
-				</div>
+               
 				
 
 				<!-- liste des services pour la recherche en dur           -->
 
-				<div ng-init="services=[{servicename:'Plomberie', content:'Intervention d\'un plombier', localisation:'32 rue sébastopolis 51100 Reims',id:'1'},{servicename:'Traiteur', content:'commande de nourriture', localisation:'7 rue des moulinettes 51100 Reims',id:'2'},
-			    {servicename:'service 3', content:'le troisième service', localisation:'paris', id:'3'}]">
+				
+                
+            </div>
+
+
+            <div class="col-md-9">
+               
+			   <div class="row">
+                      
+                   <div class="form-group">
+					<label for="recherche"> Recherche </label>
+					<input type="text" class="form-control" id="recherche" ng-model="query" >
+				</div>
+				
+				
+				
+				   <div id='pro1' class="col-sm-4 col-lg-4 col-md-4">
+                        <div   ng-init="services=[{servicename:'Plomberie', content:'Intervention d\'un plombier', localisation:'32 rue sébastopolis 51100 Reims',id:'1'}]">
+			    	
+			    	<div class="list-group" id="listeServices" ng-repeat="service in services | filter : {servicename:query}">
+
+	                    <a id = "{{service.id}}" href="pro.php" class="list-group-item">{{service.servicename|uppercase}}</a>
+                   
+	                    	                     
+                	</div>
+			    </div>
+				
+                    </div>
+					
+					<div id='pro1' class="col-sm-4 col-lg-4 col-md-4">
+                        <div ng-init="services=[{servicename:'Plomberie', content:'Intervention d\'un plombier', localisation:'32 rue sébastopolis 51100 Reims',id:'1'}]">
 			    	
 			    	<div class="list-group" id="listeServices" ng-repeat="service in services | filter : {servicename:query}">
 
@@ -88,14 +94,93 @@
 	                    	                     
                 	</div>
 			    </div>
-                
-            </div>
+				</div>
+					
+					<div id='pro1' class="col-sm-4 col-lg-4 col-md-4">
+                        <div ng-init="services=[{servicename:'Plomberie', content:'Intervention d\'un plombier', localisation:'32 rue sébastopolis 51100 Reims',id:'1'}]">
+			    	
+			    	<div class="list-group" id="listeServices" ng-repeat="service in services | filter : {servicename:query}">
 
+	                    <a id = "{{service.id}}" href="#" class="list-group-item">{{service.servicename|uppercase}}</a>
+                   
+	                    	                     
+                	</div>
+			    </div>
+			 </div>
+			 
+			 <div id='pro1' class="col-sm-4 col-lg-4 col-md-4">
+                        <div ng-init="services=[{servicename:'Plomberie', content:'Intervention d\'un plombier', localisation:'32 rue sébastopolis 51100 Reims',id:'1'}]">
+			    	
+			    	<div class="list-group" id="listeServices" ng-repeat="service in services | filter : {servicename:query}">
 
-            <div class="col-md-9">
-                <div class="row">
+	                    <a id = "{{service.id}}" href="#" class="list-group-item">{{service.servicename|uppercase}}</a>
+						</div>
+                        </div>
+                    </div>
+			 
+			 <div id='pro1' class="col-sm-4 col-lg-4 col-md-4">
+                        <div ng-init="services=[{servicename:'Plomberie', content:'Intervention d\'un plombier', localisation:'32 rue sébastopolis 51100 Reims',id:'1'}]">
+			    	
+			    	<div class="list-group" id="listeServices" ng-repeat="service in services | filter : {servicename:query}">
 
-                    <div id='pro1' class="col-sm-4 col-lg-4 col-md-4">
+	                    <a id = "{{service.id}}" href="#" class="list-group-item">{{service.servicename|uppercase}}</a>
+     	                     
+                	</div>
+					</div>
+					</div>
+			 
+			 <div id='pro1' class="col-sm-4 col-lg-4 col-md-4">
+                        <div ng-init="services=[{servicename:'Plomberie', content:'Intervention d\'un plombier', localisation:'32 rue sébastopolis 51100 Reims',id:'1'}]">
+			    	
+			    	<div class="list-group" id="listeServices" ng-repeat="service in services | filter : {servicename:query}">
+
+	                    <a id = "{{service.id}}" href="#" class="list-group-item">{{service.servicename|uppercase}}</a>
+                   
+	                    	                     
+                	</div>
+			    </div>
+			 </div>
+			 
+			 <div id='pro1' class="col-sm-4 col-lg-4 col-md-4">
+                        <div ng-init="services=[{servicename:'Plomberie', content:'Intervention d\'un plombier', localisation:'32 rue sébastopolis 51100 Reims',id:'1'}]">
+			    	
+			    	<div class="list-group" id="listeServices" ng-repeat="service in services | filter : {servicename:query}">
+
+	                    <a id = "{{service.id}}" href="#" class="list-group-item">{{service.servicename|uppercase}}</a>
+                   
+	                    	                     
+                	</div>
+			    </div>
+			 </div>
+			 
+			 <div id='pro1' class="col-sm-4 col-lg-4 col-md-4">
+                        <div ng-init="services=[{servicename:'Plomberie', content:'Intervention d\'un plombier', localisation:'32 rue sébastopolis 51100 Reims',id:'1'}]">
+			    	
+			    	<div class="list-group" id="listeServices" ng-repeat="service in services | filter : {servicename:query}">
+
+	                    <a id = "{{service.id}}" href="#" class="list-group-item">{{service.servicename|uppercase}}</a>
+                   
+	                    	                     
+                	</div>
+			    </div>
+			 </div>
+			 
+			 <div id='pro1' class="col-sm-4 col-lg-4 col-md-4">
+                        <div ng-init="services=[{servicename:'Plomberie', content:'Intervention d\'un plombier', localisation:'32 rue sébastopolis 51100 Reims',id:'1'}]">
+			    	
+			    	<div class="list-group" id="listeServices" ng-repeat="service in services | filter : {servicename:query}">
+
+	                    <a id = "{{service.id}}" href="#" class="list-group-item">{{service.servicename|uppercase}}</a>
+                   
+	                    	                     
+                	</div>
+			    </div>
+			 </div>
+			 
+			 
+					
+					
+				<!--	 <div id='pro1' class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
                             <img src="" alt="">
                             <div class="caption" id ="sous-service1">
@@ -116,36 +201,19 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </div>  -->
 
-                   <div id='pro2' class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="" alt="">
-                            <div class="caption" id="sous-service2">
-                                <h4 class="pull-right">24.99 €</h4>
-                                <h4><a href="serviceRDV">professionnel 2</a>
-                                </h4>
-                                <p>7 rue des moulinettes 51100 Reims</p>
-                                  <p>Devis sur rendez-vous</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">15 vues</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
-                            </div>
-                        </div>
+                   
+					 
                     </div>
+                        
+                    
                     
                      <!-- affichage des services de la catégorie par animation -->
 					<script type="text/javascript">
 
 						function affichagePros(id) {
-							for (var i = 1;i<3;i++){
+							for (var i = 1;i<5;i++){
 								if (i != id){
 									document.getElementById("pro"+i).style.display = 'none';
 								}

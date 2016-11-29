@@ -35,30 +35,9 @@
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-    
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-
-                        <a href="#">Acceuil</a>
-                    </li>
-                    <li>
-                        <a href="#">A propos </a>
-                    </li>
-                    <li>
-                        <a href="services.php">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <?php 
+include('header.php');
+     ?>
 
     <!-- Page Content -->
     <div class="container">
@@ -116,26 +95,15 @@
         </div>
 
         <div class="row">
-            <a class="btn btn-default" href="serviceRDV" role="button">Prendre rendez-vous avec ce devis</a>         
+            <a class="btn btn-default" href="serviceRDV.php" role="button">Prendre rendez-vous avec ce devis</a>         
         </div>
     </div>
 
     <!-- /.container -->
 
-    <div class="container">
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; URCA</p>
-                </div>
-            </div>
-        </footer>
-
-    </div>
+   <?php 
+include('footer.php')
+    ?>
     <!-- /.container -->
 
     <!-- jQuery -->
